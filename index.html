@@ -45,8 +45,8 @@
 let step = 0;
 function next() {
   const text = [
-    "Do you believe some people make days better just by existing? 🙂",
-    "If this year gave us memories… can the next give us moments together? ✨",
+    "Do you believe some people make days better just by existing? 🙂<br><br><button onclick='next()'>Yes 😊</button>",
+    "If this year gave us memories… can the next give us moments together? ✨<br><br><button onclick='next()'>Maybe ❤️</button>",
     "<div class='heart'>❤️</div><br>Happy New Year 🎉<br><br>I love you."
   ];
   document.getElementById("content").innerHTML = text[step];
@@ -55,4 +55,5 @@ function next() {
 </script>
 
 </body>
+
 </html>
