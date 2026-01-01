@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>For You ❤️</title>
+  <style>
+    body {
+      background: linear-gradient(#000000, #1a1a1a);
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 60px;
+    }
+    .box {
+      font-size: 22px;
+      margin: 20px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 18px;
+      border-radius: 20px;
+      border: none;
+      cursor: pointer;
+    }
+    .heart {
+      font-size: 60px;
+      color: red;
+      animation: beat 1s infinite;
+    }
+    @keyframes beat {
+      0% {transform: scale(1);}
+      50% {transform: scale(1.3);}
+      100% {transform: scale(1);}
+    }
+  </style>
+</head>
+
+<body>
+
+<div id="content" class="box">
+  Hey… can I ask you something? 🌙<br><br>
+  <button onclick="next()">Yes ❤️</button>
+</div>
+
+<script>
+let step = 0;
+function next() {
+  const text = [
+    "Do you believe some people make days better just by existing? 🙂",
+    "If this year gave us memories… can the next give us moments together? ✨",
+    "<div class='heart'>❤️</div><br>Happy New Year 🎉<br><br>I love you."
+  ];
+  document.getElementById("content").innerHTML = text[step];
+  step++;
+}
+</script>
+
+</body>
+</html>
